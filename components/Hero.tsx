@@ -4,7 +4,8 @@ import { MessageCircle } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5519987807575?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Reimons.', '_blank');
+    // Link genérico sem número
+    window.open('https://wa.me/?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.', '_blank');
   };
 
   const scrollToLocation = () => {
@@ -38,22 +39,22 @@ export const Hero: React.FC = () => {
               </h2>
               
               {/* Main Name */}
-              <h1 className="font-display text-6xl md:text-9xl font-bold text-white leading-none tracking-normal mb-2 drop-shadow-2xl shadow-black uppercase">
-                REIMONS
+              <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-none tracking-normal mb-2 drop-shadow-2xl shadow-black uppercase">
+                PREMIUM
               </h1>
 
               {/* Bottom Text with decorative lines */}
               <div className="flex items-center justify-center w-full gap-3">
                  <div className="h-[2px] w-8 bg-white opacity-80"></div>
                  <h3 className="text-white font-display tracking-[0.2em] uppercase font-bold text-sm md:text-xl drop-shadow-lg">
-                    DESDE 2017
+                    ESTILO & TRADIÇÃO
                  </h3>
                  <div className="h-[2px] w-8 bg-white opacity-80"></div>
               </div>
            </div>
         </div>
         
-        {/* Description Text (Services list removed) */}
+        {/* Description Text */}
         <div className="mb-10 animate-fade-in-up delay-150">
             <p className="text-gray-200 text-lg md:text-2xl font-light max-w-3xl mx-auto drop-shadow-md leading-relaxed">
               Experiência premium focada no seu estilo e bem-estar.

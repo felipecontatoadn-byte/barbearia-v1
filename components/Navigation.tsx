@@ -105,7 +105,7 @@ export const Navigation: React.FC = () => {
            </div>
 
            <div className="mt-auto mb-12">
-              <p className="text-gray-500 text-sm text-center">Barbearia Reimons</p>
+              <p className="text-gray-500 text-sm text-center">Barbearia Premium</p>
               <div className="flex justify-center mt-4">
                  <div className="w-12 h-1 bg-gold-600 rounded-full"></div>
               </div>

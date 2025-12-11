@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 
 // Nomes exatos dos arquivos na pasta public (extensão .jpg)
-// ADICIONADO: Barra '/' no início para garantir que o navegador busque na raiz (pasta public)
+// MANTIDO: O uso dos arquivos locais originais para demonstrar o layout
 const localImages = [
   "/055a435b-d3eb-4679-b7e1-874b35e29851.jpg", // Barbeiros
   "/e7d4d440-a19f-4318-ab93-b8ddccb422a5.jpg", // Cadeiras
   "/45dd932f-7634-4531-b8be-b6d3b4bdf922.jpg", // Criança
   "/d0833a65-1d02-4ec1-abfa-9543e4d94b15.jpg", // Cliente
   "/e63b36ab-0f8c-4f51-b847-ab17585f9227.jpg", // Fade
-  "/corte-lateral-detalhe.jpg"                 // NOVO: Lateral Detalhe
+  "/corte-lateral-detalhe.jpg"                 // Lateral Detalhe
 ];
 
-// Imagens de backup (Unsplash) caso o navegador não encontre os arquivos locais
+// Imagens de backup (Unsplash)
 const fallbackImages = [
   "https://images.unsplash.com/photo-1532710093739-9470acff878f?q=80&w=1470&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1634480491893-fa71c341b6bd?q=80&w=1470&auto=format&fit=crop",
@@ -22,13 +22,14 @@ const fallbackImages = [
   "https://images.unsplash.com/photo-1503951914875-452162b7f30a?q=80&w=1470&auto=format&fit=crop"
 ];
 
+// Alt text genéricos
 const altTexts = [
-  "Equipe de barbeiros da Reimons em atendimento",
-  "Cadeiras de couro clássicas da barbearia",
-  "Atendimento infantil com criança sorrindo",
-  "Cliente relaxando durante o corte",
-  "Detalhe de corte masculino com degradê (fade)",
-  "Lateral do corte com acabamento perfeito e barba alinhada"
+  "Nossa equipe de profissionais em atendimento",
+  "Ambiente clássico e confortável",
+  "Atendimento especializado infantil",
+  "Cliente satisfeito com o serviço",
+  "Detalhe de corte degradê (fade)",
+  "Acabamento e alinhamento de barba perfeito"
 ];
 
 interface GalleryItemProps {
@@ -44,7 +45,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ src, fallback, alt, className
   const [imgSrc, setImgSrc] = useState(src);
 
   const handleError = () => {
-    console.warn(`Imagem não encontrada na pasta public: ${src}. Usando fallback.`);
+    // Silently fallback in production demo
     setImgSrc(fallback);
   };
 
@@ -85,7 +86,7 @@ export const Gallery: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[250px]">
-          {/* Imagem Principal - Barbeiros */}
+          {/* Imagem Principal */}
           <GalleryItem 
             src={localImages[0]}
             fallback={fallbackImages[0]}
@@ -127,7 +128,6 @@ export const Gallery: React.FC = () => {
             alt="Zoom da galeria" 
             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl shadow-black border border-white/10"
             onError={(e) => {
-              // Se falhar no lightbox, tenta achar o fallback correspondente ou usa uma imagem padrão
               const target = e.target as HTMLImageElement;
               const index = localImages.indexOf(selectedImage);
               if (index !== -1) {

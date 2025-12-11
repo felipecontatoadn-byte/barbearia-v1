@@ -7,10 +7,9 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="text-center">
             <h3 className="font-display text-2xl font-bold tracking-widest mb-2">
-              BARBEARIA <span className="text-gold-500">REIMONS</span>
+              BARBEARIA <span className="text-gold-500">PREMIUM</span>
             </h3>
-            <p className="text-gray-500 text-sm">© 2025 Barbearia Reimons. Todos os direitos reservados.</p>
-            <p className="text-gray-500 text-sm mt-1">CNPJ: 54.122.659/0001-40</p>
+            <p className="text-gray-500 text-sm">© 2025 Sua Barbearia. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

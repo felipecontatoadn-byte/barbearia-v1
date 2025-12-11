@@ -54,7 +54,7 @@ export const Services: React.FC = () => {
                 * Valores sujeitos a alteração sem aviso prévio. Consulte para serviços especiais.
             </p>
             <a 
-                href="https://wa.me/5519987807575?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o." 
+                href="https://wa.me/?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o." 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-block bg-gold-600 text-black font-display font-bold uppercase tracking-wider py-4 px-10 hover:bg-gold-500 transition-all shadow-lg shadow-gold-600/20 transform hover:-translate-y-1"

@@ -24,10 +24,10 @@ export const InfoSection: React.FC = () => {
               Mais que um corte, <br/> uma experiência.
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              A Barbearia Reimon’s® nasceu em Piracicaba com um propósito simples: transformar cada corte em estilo e confiança. Desde o início, unimos tradição e modernidade para oferecer mais do que serviços de cabelo e barba — criamos experiências.
+              Sua Barbearia nasceu com um propósito simples: transformar cada corte em estilo e confiança. Desde o início, unimos tradição e modernidade para oferecer mais do que serviços de cabelo e barba — criamos experiências únicas.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Aqui, cada cliente faz parte da nossa trajetória. Porque na Reimon’s®, não cuidamos apenas do visual, cuidamos da sua história.
+              Aqui, cada cliente faz parte da nossa trajetória. Porque não cuidamos apenas do visual, cuidamos da sua autoestima e bem-estar.
             </p>
             
             <div className="pt-4 border-l-4 border-gold-600 pl-6">
@@ -48,16 +48,8 @@ export const InfoSection: React.FC = () => {
 
             <div className="space-y-4">
               <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                <span className="text-gray-300 font-medium">Segunda</span>
-                <span className="text-gold-500 font-bold">09:00 - 21:00</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                <span className="text-gray-300 font-medium">Terça a Quinta</span>
-                <span className="text-gold-500 font-bold">08:00 - 19:30</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                <span className="text-gray-300 font-medium">Sexta</span>
-                <span className="text-gold-500 font-bold">08:00 - 20:30</span>
+                <span className="text-gray-300 font-medium">Segunda a Sexta</span>
+                <span className="text-gold-500 font-bold">09:00 - 20:00</span>
               </div>
               <div className="flex justify-between items-center border-b border-white/10 pb-3">
                 <span className="text-gray-300 font-medium">Sábado</span>
@@ -88,7 +80,7 @@ export const InfoSection: React.FC = () => {
           <Feature 
             icon={Coffee} 
             title="Ambiente Premium" 
-            desc="Na Reimon’s®, cada corte vem acompanhado de um bom café e um ambiente de primeira" 
+            desc="Na nossa barbearia, cada corte vem acompanhado de um bom café e um ambiente de primeira." 
           />
           <Feature 
             icon={Award} 

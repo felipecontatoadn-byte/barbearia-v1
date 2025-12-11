@@ -5,21 +5,21 @@ import { Review } from '../types';
 const reviews: Review[] = [
   {
     id: 1,
-    name: "Patrick Oliveira",
+    name: "João Silva",
     rating: 5,
-    comment: "Ótimos profissionais e um ambiente acolhedor com várias mordomias para atender melhor o cliente, sem dúvidas a melhor da cidade."
+    comment: "Profissionais excelentes e um ambiente muito acolhedor. Sem dúvidas a melhor experiência que já tive na cidade."
   },
   {
     id: 2,
-    name: "Felipe Pinheiro",
+    name: "Carlos Souza",
     rating: 5,
-    comment: "Ótimo atendimento, lugar agradável sempre saio satisfeito!!"
+    comment: "Atendimento de primeira, pontualidade e um corte impecável. Recomendo a todos!"
   },
   {
     id: 3,
-    name: "Graziele Godoi",
+    name: "Ana Pereira",
     rating: 5,
-    comment: "Lugar excelente! Corte e atendimento impecável, amo cortar o cabelo do meu filho ai , proprietário e demais profissionais com postura, educação e atendimento de qualidade."
+    comment: "Lugar excelente! Levo meu filho sempre e o atendimento é espetacular, com muita paciência e educação."
   }
 ];
 

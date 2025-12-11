@@ -10,7 +10,7 @@ const ai = new GoogleGenAI({ apiKey });
 export const getStyleAdvice = async (faceShape: string, hairType: string): Promise<string> => {
   try {
     const prompt = `
-      Você é um barbeiro especialista de alto nível chamado "Consultor Reimons".
+      Você é um barbeiro especialista de alto nível.
       Um cliente chegou com as seguintes características:
       - Formato do rosto: ${faceShape}
       - Tipo de cabelo: ${hairType}
